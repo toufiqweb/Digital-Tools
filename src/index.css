@@ -8,8 +8,12 @@
 }
 
 .gradient-bg {
-  background: #4f39f6;
   background: linear-gradient(90deg, #4f39f6, #9514fa);
+  
+}
+.gradient-bg:hover {
+  background: linear-gradient(90deg, #9514fa, #4f39f6);
+
 }
 
 .gradient-text {

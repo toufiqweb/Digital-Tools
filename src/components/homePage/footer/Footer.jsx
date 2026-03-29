@@ -68,7 +68,7 @@ const Footer = () => {
             </div>
           </nav>
         </div>
-        <div class="h-px w-full bg-white/30 my-5 mt-10"></div>
+        <div className="h-px w-full bg-white/30 my-5 mt-10"></div>
         <div className="footer sm:footer-horizontal  p-4 flex flex-col md:flex-row items-center  md:justify-between">
           <aside>
             <p className="text-white/50">

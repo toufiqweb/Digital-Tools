@@ -73,7 +73,7 @@ const NavBar = () => {
               <img src={shoppingImage} alt="shopping cart" />
               <p className="font-semibold text-black/80">Login</p>
             </div>
-            <a className="btn rounded-full gradient-bg text-white hidden sm:flex">
+            <a className="btn rounded-full gradient-bg text-white hidden sm:flex hover:shadow-lg hover:shadow-indigo-400/50 transition duration-300">
               Get Started
             </a>
           </div>

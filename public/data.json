@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "name": "Starter Plan",
+    "description": "Perfect for beginners to create simple resumes.",
+    "price": 0,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "10+ templates",
+      "Basic customization",
+      "Export to PDF"
+    ],
+    "icon": "FileText",
+    "iconLink": "https://api.iconify.design/lucide:file-text.svg"
+  },
+  {
+    "id": 2,
+    "name": "Basic Plan",
+    "description": "Great for individuals looking to build professional resumes.",
+    "price": 5,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "50+ templates",
+      "ATS optimization",
+      "Download in PDF & DOCX"
+    ],
+    "icon": "Layers",
+    "iconLink": "https://api.iconify.design/lucide:layers.svg"
+  },
+  {
+    "id": 3,
+    "name": "Pro Plan",
+    "description": "Advanced tools for job seekers who want to stand out.",
+    "price": 12,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "100+ templates",
+      "AI resume suggestions",
+      "Priority support"
+    ],
+    "icon": "Sparkles",
+    "iconLink": "https://api.iconify.design/lucide:sparkles.svg"
+  },
+  {
+    "id": 4,
+    "name": "Premium Plan",
+    "description": "Full-featured plan for professionals and career growth.",
+    "price": 99,
+    "period": "yearly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "All templates access",
+      "Advanced analytics",
+      "Cover letter builder"
+    ],
+    "icon": "Crown",
+    "iconLink": "https://api.iconify.design/lucide:crown.svg"
+  },
+  {
+    "id": 5,
+    "name": "Student Plan",
+    "description": "Affordable plan designed for students and fresh graduates.",
+    "price": 3,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "30+ templates",
+      "Easy editing tools",
+      "Export to PDF"
+    ],
+    "icon": "GraduationCap",
+    "iconLink": "https://api.iconify.design/lucide:graduation-cap.svg"
+  },
+  {
+    "id": 6,
+    "name": "Team Plan",
+    "description": "Best for teams and organizations managing multiple resumes.",
+    "price": 49,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Team collaboration",
+      "Shared templates",
+      "Admin dashboard"
+    ],
+    "icon": "Users",
+    "iconLink": "https://api.iconify.design/lucide:users.svg"
+  },
+  {
+    "id": 7,
+    "name": "Enterprise Plan",
+    "description": "Custom solutions for large companies and HR teams.",
+    "price": 199,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "Unlimited users",
+      "Custom branding",
+      "Dedicated support"
+    ],
+    "icon": "Building",
+    "iconLink": "https://api.iconify.design/lucide:building.svg"
+  },
+  {
+    "id": 8,
+    "name": "Lifetime Plan",
+    "description": "One-time payment for lifetime access to all features.",
+    "price": 149,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "Lifetime updates",
+      "All premium templates",
+      "No recurring fees"
+    ],
+    "icon": "Infinity",
+    "iconLink": "https://api.iconify.design/lucide:infinity.svg"
+  }
+]
