@@ -17,3 +17,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.gradient-border {
+  border-image: linear-gradient(90deg, #4f39f6, #9514fa) 1;
+}

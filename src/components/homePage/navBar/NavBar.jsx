@@ -70,7 +70,7 @@ const NavBar = () => {
           <div className="flex items-center justify-between gap-4 px-3">
             <div className="flex items-center justify-between gap-2 ">
               <span></span>
-              <img src={shoppingImage} alt="" />
+              <img src={shoppingImage} alt="shopping cart" />
               <p className="font-semibold text-black/80">Login</p>
             </div>
             <a className="btn rounded-full gradient-bg text-white hidden sm:flex">
