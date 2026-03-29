@@ -4,8 +4,8 @@ import playImage from "../../../assets/Play.png";
 
 const Hero = () => {
   return (
-    <div className="hero bg-base-200 min-h-screen ">
-      <div className="hero-content flex-col-reverse lg:flex-row-reverse gap-10 mt-6 md:mt-10 lg:mt-5">
+    <div className="hero  min-h-screen container mx-auto ">
+      <div className="hero-content justify-between flex-col-reverse lg:flex-row-reverse gap-10 mt-6 md:mt-10 lg:mt-5">
         <div className="flex-1">
           <img
             src={bannerImage}
@@ -36,18 +36,18 @@ const Hero = () => {
             software—all in one place. Start creating faster today. <br />
             Explore Products
           </p>
-          <div className="flex items-center gap-4">
+          <div className="flex flex-col sm:flex-row items-center gap-4">
             <button className="btn btn-primary rounded-full gradient-bg">
               Explore Products
             </button>
-            <div className="btn bg-transparent border-none p-0">
+            <button className="btn bg-transparent border-none p-0">
               <div className="p-0.5 rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA]">
                 <div className="flex items-center gap-2 px-4 py-2 bg-white rounded-full">
                   <img  src={playImage} alt="video play icon" />
                   <span className="gradient-text ">Watch Demo</span>
                 </div>
               </div>
-            </div>
+            </button>
           </div>
         </div>
       </div>
