@@ -1,2 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
 @import "tailwindcss";
 @plugin "daisyui";
+
+* {
+  font-family: "Manrope", sans-serif;
+}
+
+.gradient-bg {
+  background: #4f39f6;
+  background: linear-gradient(90deg, #4f39f6, #9514fa);
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #4f39f6, #9514fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
