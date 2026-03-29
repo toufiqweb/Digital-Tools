@@ -1,130 +1,159 @@
 [
   {
     "id": 1,
-    "name": "Starter Plan",
-    "description": "Perfect for beginners to create simple resumes.",
+    "name": "Free",
+    "description": "Start your professional journey with our completely free plan. Ideal for students, fresh graduates, and anyone who wants to create a basic but clean resume without any cost. Get access to essential tools to build your first resume quickly and easily.",
     "price": 0,
     "period": "one-time",
-    "tag": "new",
-    "tagType": "new",
+    "tag": "Free",
+    "tagType": "New",
     "features": [
-      "10+ templates",
-      "Basic customization",
-      "Export to PDF"
+      "50+ modern templates",
+      "Basic ATS optimization",
+      "PDF export only",
+      "Limited storage",
+      "Community support"
     ],
-    "icon": "FileText",
-    "iconLink": "https://api.iconify.design/lucide:file-text.svg"
+    "icon": "https://cdn-icons-png.flaticon.com/512/10473/10473369.png"
   },
   {
     "id": 2,
-    "name": "Basic Plan",
-    "description": "Great for individuals looking to build professional resumes.",
-    "price": 5,
+    "name": "Starter",
+    "description": "Designed for freelancers and early-career professionals who need more flexibility and better presentation. This plan gives you access to a wider selection of templates and essential export options to help you stand out in job applications.",
+    "price": 4.99,
     "period": "monthly",
-    "tag": "popular",
-    "tagType": "popular",
+    "tag": "Starter",
+    "tagType": "New",
     "features": [
-      "50+ templates",
-      "ATS optimization",
-      "Download in PDF & DOCX"
+      "100+ premium templates",
+      "ATS optimization score",
+      "Export to PDF and Word",
+      "Basic cover letter templates",
+      "Email support"
     ],
-    "icon": "Layers",
-    "iconLink": "https://api.iconify.design/lucide:layers.svg"
+    "icon": "https://cdn-icons-png.flaticon.com/512/10473/10473376.png"
   },
   {
     "id": 3,
-    "name": "Pro Plan",
-    "description": "Advanced tools for job seekers who want to stand out.",
-    "price": 12,
+    "name": "Pro",
+    "description": "The most popular plan among job seekers and professionals. Packed with advanced tools that help you create highly optimized, visually appealing resumes that pass Applicant Tracking Systems and catch the attention of recruiters.",
+    "price": 9.99,
     "period": "monthly",
-    "tag": "best seller",
-    "tagType": "best seller",
+    "tag": "Popular",
+    "tagType": "Popular",
     "features": [
-      "100+ templates",
-      "AI resume suggestions",
-      "Priority support"
+      "200+ designer templates",
+      "Advanced ATS optimization",
+      "Cover letter builder",
+      "Priority email support",
+      "Custom sections and layouts",
+      "Resume analytics"
     ],
-    "icon": "Sparkles",
-    "iconLink": "https://api.iconify.design/lucide:sparkles.svg"
+    "icon": "https://cdn-icons-png.flaticon.com/512/10473/10473382.png"
   },
   {
     "id": 4,
-    "name": "Premium Plan",
-    "description": "Full-featured plan for professionals and career growth.",
-    "price": 99,
-    "period": "yearly",
-    "tag": "popular",
-    "tagType": "popular",
+    "name": "Premium",
+    "description": "Unlock the full potential of our platform with AI-powered assistance. This plan is perfect for serious job seekers who want to save time, improve content quality, and get every possible advantage in today's competitive job market.",
+    "price": 19.99,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "Best seller",
     "features": [
-      "All templates access",
-      "Advanced analytics",
-      "Cover letter builder"
+      "Unlimited templates",
+      "AI content suggestions and rewriting",
+      "Advanced ATS scanning and tips",
+      "Multiple resume versions",
+      "Interview preparation toolkit",
+      "24/7 priority support"
     ],
-    "icon": "Crown",
-    "iconLink": "https://api.iconify.design/lucide:crown.svg"
+    "icon": "https://cdn-icons-png.flaticon.com/512/10473/10473391.png"
   },
   {
     "id": 5,
-    "name": "Student Plan",
-    "description": "Affordable plan designed for students and fresh graduates.",
-    "price": 3,
+    "name": "Team",
+    "description": "Built for small teams, recruitment agencies, and companies that need to manage multiple resumes efficiently. Collaborate seamlessly, maintain brand consistency, and streamline the entire resume creation process for your organization.",
+    "price": 49,
     "period": "monthly",
-    "tag": "new",
-    "tagType": "new",
+    "tag": "Team",
+    "tagType": "Popular",
     "features": [
-      "30+ templates",
-      "Easy editing tools",
-      "Export to PDF"
+      "Everything in Premium plan",
+      "Team collaboration tools",
+      "Admin dashboard and controls",
+      "Shared company templates",
+      "Bulk resume generation and export",
+      "Team activity analytics"
     ],
-    "icon": "GraduationCap",
-    "iconLink": "https://api.iconify.design/lucide:graduation-cap.svg"
+    "icon": "https://cdn-icons-png.flaticon.com/512/10473/10473355.png"
   },
   {
     "id": 6,
-    "name": "Team Plan",
-    "description": "Best for teams and organizations managing multiple resumes.",
-    "price": 49,
-    "period": "monthly",
-    "tag": "popular",
-    "tagType": "popular",
+    "name": "Yearly Pro",
+    "description": "Enjoy all the powerful features of the Pro plan with significant savings. Perfect for users who are committed to long-term career growth and want to avoid monthly billing while getting extra value through extended access and updates.",
+    "price": 89,
+    "period": "yearly",
+    "tag": "Save 40%",
+    "tagType": "Popular",
     "features": [
-      "Team collaboration",
-      "Shared templates",
-      "Admin dashboard"
+      "All features from Pro plan",
+      "Billed annually (save 40%)",
+      "2 months completely free",
+      "Early access to new templates",
+      "Extended priority support"
     ],
-    "icon": "Users",
-    "iconLink": "https://api.iconify.design/lucide:users.svg"
+    "icon": "https://cdn-icons-png.flaticon.com/512/10473/10473364.png"
   },
   {
     "id": 7,
-    "name": "Enterprise Plan",
-    "description": "Custom solutions for large companies and HR teams.",
+    "name": "Lifetime",
+    "description": "Make a one-time investment and enjoy unlimited access forever. This plan is ideal for professionals who want complete peace of mind without worrying about recurring payments, while still receiving all future updates and new features.",
     "price": 199,
-    "period": "yearly",
-    "tag": "best seller",
-    "tagType": "best seller",
+    "period": "one-time",
+    "tag": "Best Value",
+    "tagType": "New",
     "features": [
-      "Unlimited users",
-      "Custom branding",
-      "Dedicated support"
+      "All Premium features included",
+      "Lifetime access and updates",
+      "All future tools and templates",
+      "No recurring subscription fees",
+      "VIP support channel"
     ],
-    "icon": "Building",
-    "iconLink": "https://api.iconify.design/lucide:building.svg"
+    "icon": "https://cdn-icons-png.flaticon.com/512/10473/10473348.png"
   },
   {
     "id": 8,
-    "name": "Lifetime Plan",
-    "description": "One-time payment for lifetime access to all features.",
-    "price": 149,
-    "period": "one-time",
-    "tag": "best seller",
-    "tagType": "best seller",
+    "name": "Enterprise",
+    "description": "Tailored solutions for large organizations, enterprises, and educational institutions. Get custom integrations, dedicated support, enhanced security features, and scalable solutions designed specifically for your team's unique requirements.",
+    "price": 299,
+    "period": "monthly",
+    "tag": "Enterprise",
+    "tagType": "Popular",
     "features": [
-      "Lifetime updates",
-      "All premium templates",
-      "No recurring fees"
+      "Unlimited users and features",
+      "Custom AI model training",
+      "SSO, SAML & advanced security",
+      "Dedicated account manager",
+      "Service Level Agreement (SLA)",
+      "Custom branding and white-label"
     ],
-    "icon": "Infinity",
-    "iconLink": "https://api.iconify.design/lucide:infinity.svg"
+    "icon": "https://cdn-icons-png.flaticon.com/512/10473/10473397.png"
+  },
+  {
+    "id": 9,
+    "name": "Student",
+    "description": "Specially crafted for current students and recent graduates with limited budget. Get professional resume building tools at a heavily discounted rate while still enjoying most of the advanced features to help you land your first job or internship.",
+    "price": 2.99,
+    "period": "monthly",
+    "tag": "Student",
+    "tagType": "New",
+    "features": [
+      "150+ student-friendly templates",
+      "ATS optimization tools",
+      "PDF and Word export",
+      "Basic cover letter builder",
+      "Student email verification required"
+    ],
+    "icon": "https://cdn-icons-png.flaticon.com/512/10473/10473372.png"
   }
 ]
