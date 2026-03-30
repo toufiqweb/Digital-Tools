@@ -3,7 +3,7 @@ import React from "react";
 
 const Pricing = () => {
   return (
-    <div className="py-30">
+    <div className="py-30 px-5">
       <div className="container mx-auto text-center ">
         <h1 className=" text-3xl md:text-4xl lg:text-6xl font-extrabold leading-normal">
           Simple, Transparent Pricing
@@ -53,7 +53,7 @@ const Pricing = () => {
           <div className=" gradient-bg text-white text-left rounded-2xl  relative flex-1 flex flex-col hover:shadow-lg hover:shadow-indigo-400/50 transition duration-300">
             <div
               className="badge absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2  
-                bg-yellow-100 text-yellow-600 px-4 py-3 rounded-full text-sm font-semibold shadow-md"
+                bg-yellow-100 text-yellow-600 px-4 py-3 rounded-full text-[10px] sm:text-sm font-semibold shadow-md"
             >
               Most Popular
             </div>
@@ -95,7 +95,7 @@ const Pricing = () => {
               </ul>
 
               <button className="w-full mt-auto bg-white  font-semibold py-4 rounded-full btn border-none  shadow-none hover:shadow-lg hover:shadow-indigo-400/50 transition duration-300">
-                <h1 className="gradient-text ">Explore Products</h1>
+                <h1 className="gradient-text ">Start Pro Trial</h1>
               </button>
             </div>
           </div>

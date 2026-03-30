@@ -17,12 +17,12 @@ const DigitalTools = ({activeTab ,setActiveTab , carts}) => {
       </div>
 
       {/* name of each tab group should be unique */}
-      <div className="tabs tabs-box bg-transparent justify-center gap-8 items-center  shadow-none">
+      <div className="tabs tabs-box bg-transparent justify-center  items-center  shadow-none">
         
         <input
           type="radio"
           name="my_tabs_1"
-          className={`tab px-8  ${activeTab === "product" && "rounded-full gradient-bg text-white hover:shadow-lg hover:shadow-indigo-400/50 transition duration-300"}`}
+          className={`tab px-8   border-l-2 border-gray-200 rounded-full  ${activeTab === "product" && " border-none  gradient-bg text-white hover:shadow-lg hover:shadow-indigo-400/50 transition duration-300"}`}
           aria-label="Products"
           onClick={() => setActiveTab("product")}
           defaultChecked
@@ -30,7 +30,7 @@ const DigitalTools = ({activeTab ,setActiveTab , carts}) => {
         <input
           type="radio"
           name="my_tabs_1"
-          className={`tab px-8 ${activeTab === "cart" && "rounded-full gradient-bg text-white hover:shadow-lg hover:shadow-indigo-400/50 transition duration-300"}`}
+          className={`tab px-8 border-r-2 border-gray-200 rounded-full  ${activeTab === "cart" && " border-none gradient-bg text-white hover:shadow-lg hover:shadow-indigo-400/50 transition duration-300"}`}
           aria-label={`Cart (${carts.length})`}
           onClick={() => setActiveTab("cart")}
         />

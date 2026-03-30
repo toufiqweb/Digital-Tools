@@ -15,18 +15,19 @@ const fetchProductsData = async () => {
   const res = await fetch("/data.json");
   return res.json();
 };
+const productsPromise = fetchProductsData();
 
 function App() {
-  const productsPromise = fetchProductsData();
+  // const productsPromise = fetchProductsData();
 
   const [activeTab, setActiveTab] = useState("product");
 
   const [carts, setCarts] = useState([]);
-  console.log(carts);
+  // console.log(carts);
 
   return (
     <>
-      <NavBar carts={carts}/>
+      <NavBar carts={carts} />
 
       <Hero />
       <Stat />
@@ -37,19 +38,24 @@ function App() {
       />
 
       {activeTab === "product" ? (
-        <Suspense
-          fallback={
-            <div className="flex justify-center items-center h-[50vh]">
-              <span className="loading loading-spinner text-primary"></span>
-            </div>
-          }
-        >
-          <Products
-            productsPromise={productsPromise}
-            carts={carts}
-            setCarts={setCarts}
-          />
-        </Suspense>
+        // <Suspense
+        //   fallback={
+        //     <div className="flex justify-center items-center h-[50vh]">
+        //       <span className="loading loading-spinner text-primary"></span>
+        //     </div>
+        //   }
+        // >
+        //   <Products
+        //     productsPromise={productsPromise}
+        //     carts={carts}
+        //     setCarts={setCarts}
+        //   />
+        // </Suspense>
+        <Products
+          productsPromise={productsPromise}
+          carts={carts}
+          setCarts={setCarts}
+        />
       ) : (
         <Carts carts={carts} setCarts={setCarts} />
       )}

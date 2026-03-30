@@ -13,11 +13,11 @@ const ProductCard = ({ product, carts, setCarts }) => {
     const findExistCart = carts.find(item => item.id === product.id )
 
     if (findExistCart) {
-      toast.error("Item already Added in cart!");
+      toast.error("Item already in your cart !");
       return
     }
 
-    toast.success("Item added successfully!");
+    toast.success("Added to cart !");
     setCarts([...carts, product]);
   };
 

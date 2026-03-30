@@ -36,7 +36,7 @@ const Carts = ({ carts, setCarts }) => {
               <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-gray-900">
                 Your Cart
               </h1>
-              <div className="space-y-4 py-5 mt-10">
+              <div className="space-y-5 py-5 mt-10">
                 {/* cards here */}
                 {
                     carts.map(cart => <CartsCard key={cart.id} cart={cart} carts={carts} setCarts={setCarts} />)
