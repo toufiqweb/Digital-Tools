@@ -1,5 +1,6 @@
 import React from "react";
 import CartsCard from "./CartsCard";
+import { toast } from "react-toastify";
 
 const Carts = ({ carts, setCarts }) => {
   // console.log(carts);
@@ -9,7 +10,7 @@ const Carts = ({ carts, setCarts }) => {
   const handleToProceed = () => {
 
     setCarts([])
-    alert("payment successful")
+   toast.success("Payment Successful!");
   }
 
 

@@ -21,16 +21,20 @@ function App() {
 
   const [activeTab, setActiveTab] = useState("product");
 
-  const [carts , setCarts ] = useState([]);
+  const [carts, setCarts] = useState([]);
   console.log(carts);
-  
 
   return (
     <>
-      <NavBar />
+      <NavBar carts={carts}/>
+
       <Hero />
       <Stat />
-      <DigitalTools activeTab={activeTab} setActiveTab={setActiveTab} carts={carts} />
+      <DigitalTools
+        activeTab={activeTab}
+        setActiveTab={setActiveTab}
+        carts={carts}
+      />
 
       {activeTab === "product" ? (
         <Suspense
@@ -40,13 +44,15 @@ function App() {
             </div>
           }
         >
-          <Products productsPromise={productsPromise} carts={carts} setCarts ={setCarts} />
+          <Products
+            productsPromise={productsPromise}
+            carts={carts}
+            setCarts={setCarts}
+          />
         </Suspense>
-      ) 
-
-      :
-       
-       (<Carts carts={carts} setCarts ={setCarts}/>)}
+      ) : (
+        <Carts carts={carts} setCarts={setCarts} />
+      )}
 
       <Steps />
       <Pricing />

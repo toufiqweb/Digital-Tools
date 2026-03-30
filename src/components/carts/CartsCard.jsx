@@ -1,4 +1,5 @@
 import React from "react";
+import { toast } from "react-toastify";
 
 const CartsCard = ({ cart, carts, setCarts }) => {
 
@@ -6,6 +7,7 @@ const CartsCard = ({ cart, carts, setCarts }) => {
     const filteredCarts = carts.filter((item) => cart.id !== item.id);
 
     setCarts(filteredCarts)
+    toast.warning("Item is removed !");
   };
 
   return (

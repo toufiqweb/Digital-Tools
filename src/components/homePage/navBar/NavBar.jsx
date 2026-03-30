@@ -1,7 +1,7 @@
 import React from "react";
 import shoppingImage from "../../../assets/products/shopping-cart.png";
 
-const NavBar = () => {
+const NavBar = ({carts}) => {
   return (
     <div className=" bg-base-100 shadow-sm">
       <div className="container mx-auto navbar ">
@@ -45,7 +45,9 @@ const NavBar = () => {
               </li>
             </ul>
           </div>
-          <h1 className="leading-[1.3] text-xl md:text-2xl lg:text-4xl font-extrabold  gradient-text">DigiTools</h1>
+          <h1 className="leading-[1.3] text-xl md:text-2xl lg:text-4xl font-extrabold  gradient-text">
+            DigiTools
+          </h1>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 font-semibold text-black/80">
@@ -68,11 +70,24 @@ const NavBar = () => {
         </div>
         <div className="navbar-end">
           <div className="flex items-center justify-between gap-4 px-3">
-            <div className="flex items-center justify-between gap-2 ">
-              <span></span>
-              <img src={shoppingImage} alt="shopping cart" />
-              <p className="font-semibold text-black/80">Login</p>
+            {/* //////////////////////////// */}
+            <div
+              tabIndex={0}
+              role="button"
+              className="btn btn-ghost "
+            >
+              <div className="indicator">
+                <img src={shoppingImage} alt="shopping cart" />
+                {
+                  carts.length > 0 && <span className="badge badge-sm indicator-item btn-circle rounded-full text-white bg-red-500">{carts.length}</span> 
+                }
+              </div>
             </div>
+
+            {/* //////////////// */}
+
+            <p className="font-semibold text-black/80">Login</p>
+
             <a className="btn rounded-full gradient-bg text-white hidden sm:flex hover:shadow-lg hover:shadow-indigo-400/50 transition duration-300">
               Get Started
             </a>
