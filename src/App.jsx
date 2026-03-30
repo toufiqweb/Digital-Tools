@@ -9,6 +9,7 @@ import Stat from "./components/homePage/stat/Stat";
 import Steps from "./components/homePage/steps/Steps";
 import Workflow from "./components/homePage/workflow/Workflow";
 import Products from "./components/products/Products";
+import Carts from "./components/carts/Carts";
 
 const fetchProductsData = async () => {
   const res = await fetch("/data.json");
@@ -20,16 +21,32 @@ function App() {
 
   const [activeTab, setActiveTab] = useState("product");
 
+  const [carts , setCarts ] = useState([]);
+  console.log(carts);
+  
+
   return (
     <>
       <NavBar />
       <Hero />
       <Stat />
-      <DigitalTools activeTab={activeTab} setActiveTab={setActiveTab} />
+      <DigitalTools activeTab={activeTab} setActiveTab={setActiveTab} carts={carts} />
 
-      <Suspense fallback={<div className="flex justify-center items-center h-[40vh]"><span className="loading loading-spinner text-primary"></span></div>}>
-        <Products productsPromise={productsPromise}/>
-      </Suspense>
+      {activeTab === "product" ? (
+        <Suspense
+          fallback={
+            <div className="flex justify-center items-center h-[50vh]">
+              <span className="loading loading-spinner text-primary"></span>
+            </div>
+          }
+        >
+          <Products productsPromise={productsPromise} carts={carts} setCarts ={setCarts} />
+        </Suspense>
+      ) 
+
+      :
+       
+       (<Carts carts={carts} setCarts ={setCarts}/>)}
 
       <Steps />
       <Pricing />

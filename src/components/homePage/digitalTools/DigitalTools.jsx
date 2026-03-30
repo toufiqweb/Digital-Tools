@@ -1,6 +1,6 @@
 import React from "react";
 
-const DigitalTools = ({activeTab ,setActiveTab}) => {
+const DigitalTools = ({activeTab ,setActiveTab , carts}) => {
 
 
   return (
@@ -31,7 +31,7 @@ const DigitalTools = ({activeTab ,setActiveTab}) => {
           type="radio"
           name="my_tabs_1"
           className={`tab px-8 ${activeTab === "cart" && "rounded-full gradient-bg text-white hover:shadow-lg hover:shadow-indigo-400/50 transition duration-300"}`}
-          aria-label="Cart (2)"
+          aria-label={`Cart (${carts.length})`}
           onClick={() => setActiveTab("cart")}
         />
       </div>

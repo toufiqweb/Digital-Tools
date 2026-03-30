@@ -1,8 +1,16 @@
 import { Check } from "lucide-react";
-import React from "react";
+import React, { useState } from "react";
 
-const ProductCard = ({ product }) => {
-  console.log(product.features);
+const ProductCard = ({ product, carts, setCarts }) => {
+  // console.log(product.features);
+
+  const [isAddToCart, setIsAddToCart] = useState(false);
+
+  const handleBuyNow = () => {
+    setIsAddToCart(true);
+
+    setCarts([...carts, product]);
+  };
 
   return (
     <div className=" shadow-md text-left rounded-2xl flex-1 flex flex-col hover:shadow-lg hover:shadow-indigo-400/50 transition duration-300">
@@ -35,16 +43,19 @@ const ProductCard = ({ product }) => {
         </div>
 
         <ul className="space-y-1.5 mb-7 text-gray-600">
-          {product.features.map((feature) => (
-            <li className="flex items-start gap-3">
+          {product.features.map((feature, index) => (
+            <li key={index} className="flex items-start gap-3">
               <Check color="lightgreen" />
               <span>{feature}</span>
             </li>
           ))}
         </ul>
 
-        <button className="w-full text-white mt-auto btn btn-primary rounded-full gradient-bg hover:shadow-lg hover:shadow-indigo-400/50 transition duration-300">
-          Buy Now
+        <button
+          onClick={handleBuyNow}
+          className={`w-full text-white mt-auto btn  rounded-full hover:shadow-lg  transition duration-300 ${isAddToCart ? "btn-success bg-linear-to-r from-green-300 to-green-500 hover:shadow-green-400/50  " : "btn-primary gradient-bg  hover:shadow-indigo-400/50 "}`}
+        >
+          {isAddToCart ? "Added to cart" : "Buy Now"}
         </button>
       </div>
     </div>
