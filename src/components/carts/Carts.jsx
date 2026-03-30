@@ -15,7 +15,7 @@ const Carts = ({ carts, setCarts }) => {
 
 
   return (
-    <div className="container mx-auto my-12 px-5">
+    <div className="container mx-auto my-12 px-3 md:px-5">
       {carts.length === 0 ? (
         <div className="h-[50vh] flex flex-col justify-center items-center text-center">
           <div className="w-24 h-24 bg-gray-100 rounded-full flex items-center justify-center mb-6">
@@ -30,13 +30,13 @@ const Carts = ({ carts, setCarts }) => {
           </p>
         </div>
       ) : (
-        <div className="space-y-12">
-          <div className="bg-white border border-gray-200 rounded-3xl p-8 md:p-10 shadow-xl sticky bottom-6 md:static">
+        <div className="space-y-12 ">
+          <div className="bg-white border border-gray-200 rounded-3xl p-4 md:p-10 shadow-xl  bottom-6">
             <div className=" mb-10">
-              <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-gray-900">
+              <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-gray-900 mt-6">
                 Your Cart
               </h1>
-              <div className="space-y-5 py-5 mt-10">
+              <div className="space-y-5 py-5 mt-7">
                 {/* cards here */}
                 {
                     carts.map(cart => <CartsCard key={cart.id} cart={cart} carts={carts} setCarts={setCarts} />)
@@ -48,7 +48,7 @@ const Carts = ({ carts, setCarts }) => {
                 Total Amount
               </h2>
               <div className="text-right">
-                <p className="text-4xl md:text-5xl font-bold text-gray-900 ">
+                <p className="text-3xl md:text-5xl font-bold text-gray-900 ">
                   ${totalPrice.toFixed(2)} 
                 </p>
               </div>
@@ -64,10 +64,6 @@ const Carts = ({ carts, setCarts }) => {
             >
               Proceed to Checkout
             </button>
-
-            <p className="text-center text-xs text-gray-400 mt-6">
-              Secure checkout powered by Stripe
-            </p>
           </div>
         </div>
       )}
