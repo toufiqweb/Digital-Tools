@@ -9,6 +9,12 @@ const ProductCard = ({ product, carts, setCarts }) => {
   const handleBuyNow = () => {
     setIsAddToCart(true);
 
+    const findExistCart = carts.find(item => item.id === product.id )
+
+    if (findExistCart) {
+      
+      return
+    }
     setCarts([...carts, product]);
   };
 

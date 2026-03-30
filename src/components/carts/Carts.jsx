@@ -12,6 +12,7 @@ const Carts = ({ carts, setCarts }) => {
     alert("payment successful")
   }
 
+
   return (
     <div className="container mx-auto my-12 px-5">
       {carts.length === 0 ? (
@@ -37,7 +38,7 @@ const Carts = ({ carts, setCarts }) => {
               <div className="space-y-4 py-5 mt-10">
                 {/* cards here */}
                 {
-                    carts.map(cart => <CartsCard key={cart.id} cart={cart} />)
+                    carts.map(cart => <CartsCard key={cart.id} cart={cart} carts={carts} setCarts={setCarts} />)
                 }
               </div>
             </div>
@@ -47,7 +48,7 @@ const Carts = ({ carts, setCarts }) => {
               </h2>
               <div className="text-right">
                 <p className="text-4xl md:text-5xl font-bold text-gray-900 ">
-                  ${totalPrice} 
+                  ${totalPrice.toFixed(2)} 
                 </p>
               </div>
             </div>
