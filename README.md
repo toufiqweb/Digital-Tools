@@ -14,6 +14,20 @@ Access premium AI tools, design assets, templates, and productivity software —
 
 The design is fully inspired by professional Figma mockups and implemented with pixel-perfect accuracy.
 
+
+---
+
+## 📸 Screenshot
+
+![Digital-Tools](https://i.ibb.co.com/spBjSh9z/Digi-Tools-digital-platform-mockup.png)
+
+## 🔗 Links
+
+- 🌐 Live Site: [View Live Site](https://digital-tools-m.netlify.app/) 
+- 💻 GitHub Repo: [View Repo ](https://github.com/toufiqweb/Digital-Tools)
+ <!-- Add your deployed link here -->
+
+
 ---
 
 ##  Technologies Used
@@ -24,6 +38,18 @@ The design is fully inspired by professional Figma mockups and implemented with 
 - **Notifications** : React-Toastify
 - **Data Management** : JSON-based product architecture
 - **JavaScript (ES6+)**
+
+---
+
+#### 📦 Dependencies
+
+- react
+- react-dom
+- react-router-dom
+- react-toastify
+- lucide-react
+- tailwindcss
+- daisyui
 
 ---
 
@@ -44,3 +70,24 @@ The design is fully inspired by professional Figma mockups and implemented with 
 
 ---
 
+## ⚙️ How to Run Locally
+
+```bash
+# Clone the repository
+git clone https://github.com/toufiqweb/Digital-Tools.git
+
+# Go to project folder
+cd digital-tools
+
+# Install dependencies
+npm install
+
+# Run the project
+npm run dev
+
+```
+
+##  Developer
+
+- Name: Toufiq Alahe
+- GitHub: [toufiqweb](https://github.com/toufiqweb)
